@@ -71,7 +71,7 @@ Cl
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T08:29:55.767Z  
+**Submitted:** 2026-09-23T09:34:40.806Z  
 
 ```java
 import java.io.*;
