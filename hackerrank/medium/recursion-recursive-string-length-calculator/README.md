@@ -61,13 +61,27 @@ The string "recursion" has 9 characters, so the output is 9.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T08:32:14.153Z  
+**Submitted:** 2026-09-25T08:31:42.760Z  
 
 ```java
 import java.io.*;
+
 public class Solution {
- static int len(String s,int i){return i==s.length()?0:1+len(s,i+1);}
- public static void main(String[] args)throws Exception{BufferedReader br=new BufferedReader(new InputStreamReader(System.in));String s=br.readLine();if(s==null)s="";System.out.print(len(s,0));}
+    
+    static int len(String s, int i) {
+        return i == s.length() ? 0 : 1 + len(s, i + 1);
+    }
+    
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        
+        if (s == null) {
+            s = "";
+        }
+        
+        System.out.print(len(s, 0));
+    }
 }
 
 ```
